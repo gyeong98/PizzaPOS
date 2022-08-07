@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   xmlns:tools="http://schemas.android.com/tools"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="match_parent">
+    <ImageView
+            android:layout_width="230dp"
+            android:layout_height="230dp" android:id="@+id/imageView"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintVertical_bias="0.083"
+            app:layout_constraintHorizontal_bias="0.154" android:contentDescription="@string/pizza_pictures"/>
+    <TextView
+            android:text="@string/total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/textView8"
+            app:layout_constraintTop_toTopOf="parent" android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.183"
+            app:layout_constraintVertical_bias="0.896"/>
+    <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content" android:id="@+id/totalBox"
+            app:layout_constraintTop_toTopOf="@+id/textView8" android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView8" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.398"
+            app:layout_constraintVertical_bias="0.0"/>
+    <Button
+            android:text="@string/add_orders"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/addOrderButton"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.809"
+            app:layout_constraintVertical_bias="0.891" android:onClick="addOrder"/>
+    <Spinner
+            android:layout_width="130dp"
+            android:layout_height="wrap_content" android:id="@+id/sizeSpinner"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0" app:layout_constraintVertical_bias="0.189"
+            android:textSize="18sp"/>
+    <Switch
+            android:text="@string/black_olives"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/blackOlives"
+            app:layout_constraintTop_toTopOf="parent" android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.787"
+            app:layout_constraintVertical_bias="0.711"/>
+    <Switch
+            android:text="@string/pineapple"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/pineapple"
+            app:layout_constraintTop_toTopOf="parent" android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.794"
+            app:layout_constraintVertical_bias="0.649"/>
+    <Switch
+            android:text="@string/mushroom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/mushroom"
+            app:layout_constraintTop_toTopOf="parent" android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.137"
+            app:layout_constraintVertical_bias="0.582"/>
+    <Switch
+            android:text="@string/onion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/onion"
+            app:layout_constraintTop_toTopOf="parent" android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.243"
+            app:layout_constraintVertical_bias="0.776"/>
+    <Switch
+            android:text="@string/pepperonis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/pepperoni"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.148"
+            app:layout_constraintVertical_bias="0.512" android:textSize="18sp"/>
+    <Switch
+            android:text="@string/fresh_garlic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/freshGarlic"
+            app:layout_constraintTop_toTopOf="parent" android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.789"
+            app:layout_constraintVertical_bias="0.776"/>
+    <Switch
+            android:text="@string/extra_cheese"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/extraCheese"
+            app:layout_constraintTop_toTopOf="parent" android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.078"
+            app:layout_constraintVertical_bias="0.649"/>
+    <Switch
+            android:text="@string/green_pepper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/greenPepper"
+            app:layout_constraintTop_toTopOf="parent" android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.775"
+            app:layout_constraintVertical_bias="0.512"/>
+    <Switch
+            android:text="@string/ham"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/ham"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.262"
+            app:layout_constraintVertical_bias="0.711" android:textSize="18sp"/>
+    <Switch
+            android:text="@string/olives"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/olives"
+            app:layout_constraintTop_toTopOf="parent" android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.816"
+            app:layout_constraintVertical_bias="0.582"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
